@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Restaurant Aléatoire</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+        <link rel="manifest" href="assets/site.webmanifest">
+        <link rel="mask-icon" href="assets/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+    </head>
+
+    <body>
+        <div id="place-details"></div>
+        <div class="flex-container">
+            <select id="star-rating" class="star-rating">
+                <option value="0" selected>0 étoiles</option>
+                <option value="0.5">0.5 étoiles</option>
+                <option value="1">1 étoile</option>
+                <option value="1.5">1.5 étoiles</option>
+                <option value="2">2 étoiles</option>
+                <option value="2.5">2.5 étoiles</option>
+                <option value="3">3 étoiles</option>
+                <option value="3.5">3.5 étoiles</option>
+                <option value="4">4 étoiles</option>
+                <option value="4.5">4.5 étoiles</option>
+                <option value="5">5 étoiles</option>
+            </select>
+            <button id="reload-btn">Restaurant aléatoire</button>
+        </div>
+        <input type="range" id="rangeInput" min="0" max="5000" value="500" oninput="updateValueDisplay()">
+        <div class="value-display"> <span id="valueDisplay">500m</span></div>
+        <script src="app.js"></script>
+    </body>
+
+</html>
