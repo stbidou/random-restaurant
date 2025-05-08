@@ -44,12 +44,13 @@ function displayPlaceDetails(place) {
     const placeDetailsDiv = document.getElementById('place-details');
 
     placeDetailsDiv.innerHTML = `
-        <h2>${place.title}</h2>
-        <hr><p><strong>Adresse :</strong> ${place.address}</p>
-        <p><strong>Note :</strong> ${place.totalScore}★ (${place.reviewsCount} avis)</p>
-        <p><strong>Category :</strong> ${place.categoryName}</p>
-        <p><strong>URL :</strong> <a href="${place.url}" target="_blank">${place.url}</a></p>
-        <hr><p><strong>Nombre de restaurant dans la zone : </strong>${nbrbar}</p>`;
+        <a href="${place.url}" target="_blank" style="color: #ffd166; font-size: 1.4rem; font-weight: bold; text-decoration: none; display: block; text-align: center;">
+            ${place.title} (${place.totalScore}★)
+        </a>
+        <div style="text-align: center; font-size: 0.60rem; color: #bbb; margin-top: 0.2rem;">
+            ${nbrbar} bars dans la zone
+        </div>
+    `;
 }
 
 let placesData = null;
