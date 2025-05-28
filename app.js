@@ -48,7 +48,7 @@ function displayPlaceDetails(place) {
             ${place.title} (${place.totalScore}★)
         </a>
         <div style="text-align: center; font-size: 0.60rem; color: #bbb; margin-top: 0.2rem;">
-            ${nbrbar} bars dans la zone
+            ${nbrbar} restos dans la zone
         </div>
     `;
 }
